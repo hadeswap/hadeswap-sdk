@@ -23,23 +23,23 @@ export enum Rounding {
 export const INIT_CODE_HASH: string = '0x54133925c45bec962a59f3e2c52a7d507cf9225eb14aa6f0f01a33e997e4fa3c'
 
 export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '',
-  [ChainId.SPARTA]: '0xfD8a7bdBD01b74c6E0556916437b44f1dC014095'
+  [ChainId.MAINNET]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
+  [ChainId.SPARTA]: '0xDD583ec8E7018afcBB2b91D710bCD942949D1148'
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
-  [ChainId.SPARTA]: '0xa444b8d7AfC8b7Ec2DE8BCb1834D90A5df6C09E2'
+  [ChainId.SPARTA]: '0x197019742245DbF070B4c5A26267b8Cb1489995a'
 }
 
 export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
-  [ChainId.SPARTA]: '0x36DE41F90B013EAeAc13AC298D00A3C025a88043'
+  [ChainId.SPARTA]: '0x4a2489C75302e764FEcC08BBB07810A16DC60424'
 }
 
 export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
-  [ChainId.SPARTA]: '0xf2C18Bf2A4BcC791d5f7c315D4FA1c6e6A511152',
+  [ChainId.SPARTA]: '0xB11A6cDfE8A4a5c8ab0404430E964C5a76177677',
 }
 
 

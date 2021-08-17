@@ -75,7 +75,7 @@ export const WETH = {
   // ),
   [ChainId.SPARTA]: new Token(
     ChainId.SPARTA,
-    '0xc614405267ecdbf01fb5b425e3f2ec657160101a',
+    '0x102Deb2a50730b949ff1ec14C5f1C54De37Cca5a',
     18,
     'WETH',
     'Wrapped ETH'
