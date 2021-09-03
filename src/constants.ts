@@ -34,18 +34,33 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
 
 export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
-  [ChainId.SPARTA]: '0x79c099C1d98707C0C6d2AF9c88A8C1AC9071baC4'
+  [ChainId.SPARTA]: '0xc9Ec2EDD1BA38918a55B5ab637dd0Ac02e6e4058'
 }
 
 export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
-  [ChainId.SPARTA]: '0xfbF3EBdE15DB16C933a392746079AB288476EF25',
+  [ChainId.SPARTA]: '0xb4BE34C7430FF011b653166570E211C15a03e4fA',
 }
 
 
 export const TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.SPARTA]: '',
+}
+
+export const BAR_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.SPARTA]: '0x6e7EA729A4716b6823E5F93f51f77A6D6Aa4969D'
+}
+
+export const MAKER_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.SPARTA]: '0xC94A2FbeAc7094790F04412873CeF3f23b024f7D'
+}
+
+export const DAI_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.SPARTA]: '0x388ABBB063608924d8033F1B1266B64C93F1a3a3'
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
