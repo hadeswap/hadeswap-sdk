@@ -15,10 +15,16 @@ export class Currency {
 
   public static readonly ETHER: Currency = new Currency(18, 'ETH', 'Ether')
   public static readonly POLIS: Currency = new Currency(18, 'POLIS', 'Polis')
+  public static readonly BNB: Currency = new Currency(18, 'BNB', 'Bnb')
+  public static readonly MATIC: Currency = new Currency(18, 'MATIC', 'Matic')
+
+
 
   public static readonly NATIVE = {
     [ChainId.MAINNET]: Currency.ETHER,
-    [ChainId.SPARTA]: Currency.POLIS
+    [ChainId.SPARTA]: Currency.POLIS,
+    [ChainId.BSC]: Currency.BNB,
+    [ChainId.MUMBAI]: Currency.MATIC
   }
 
   /**

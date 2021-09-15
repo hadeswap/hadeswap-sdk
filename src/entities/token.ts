@@ -66,18 +66,25 @@ export const WETH = {
     'WETH',
     'Wrapped Ether'
   ),
-  // [ChainId.RINKEBY]: new Token(
-  //   ChainId.RINKEBY,
-  //   '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-  //   18,
-  //   'WETH',
-  //   'Wrapped Ether'
-  // ),
+  [ChainId.BSC]: new Token(
+    ChainId.BSC,
+    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
   [ChainId.SPARTA]: new Token(
     ChainId.SPARTA,
     '0xC614405267eCDbF01FB5b425e3F2EC657160101A',
     18,
     'WETH',
     'Wrapped ETH'
-  )
+  ),
+  [ChainId.MUMBAI]: new Token(
+      ChainId.MUMBAI,
+      '0xC614405267eCDbF01FB5b425e3F2EC657160101A',
+      18,
+      'WETH',
+      'Wrapped ETH'
+  ),
 }
