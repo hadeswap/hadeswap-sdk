@@ -1,12 +1,12 @@
 import { ChainId, Token, Pair, TokenAmount, WETH, Price } from '../src'
 
 describe('Pair', () => {
-  const USDC = new Token(ChainId.SPARTA, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 18, 'USDC', 'USD Coin')
-  const DAI = new Token(ChainId.SPARTA, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'DAI Stablecoin')
+  const USDC = new Token(ChainId.MAINNET, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 18, 'USDC', 'USD Coin')
+  const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'DAI Stablecoin')
 
   describe('constructor', () => {
     it('cannot be used for tokens on different chains', () => {
-      expect(() => new Pair(new TokenAmount(USDC, '100'), new TokenAmount(WETH[ChainId.MAINNET], '100'))).toThrow(
+      expect(() => new Pair(new TokenAmount(USDC, '100'), new TokenAmount(WETH[ChainId.SPARTA], '100'))).toThrow(
         'CHAIN_IDS'
       )
     })
@@ -14,7 +14,7 @@ describe('Pair', () => {
 
   describe('#getAddress', () => {
     it('returns the correct address', () => {
-      expect(Pair.getAddress(USDC, DAI)).toEqual('0xa0a56ce916BB0E6b9c83Cf23Ee87Ebd5B1458320')
+      expect(Pair.getAddress(USDC, DAI)).toEqual('0x3a08E76a1B93037C75F8D53804759Bc5f561886D')
     })
   })
 
@@ -81,7 +81,7 @@ describe('Pair', () => {
     })
 
     it('throws if invalid token', () => {
-      expect(() => pair.priceOf(WETH[ChainId.SPARTA])).toThrow('TOKEN')
+      expect(() => pair.priceOf(WETH[ChainId.MAINNET])).toThrow('TOKEN')
     })
   })
 
@@ -97,22 +97,22 @@ describe('Pair', () => {
 
     it('throws if not in the pair', () => {
       expect(() =>
-        new Pair(new TokenAmount(DAI, '101'), new TokenAmount(USDC, '100')).reserveOf(WETH[ChainId.SPARTA])
+        new Pair(new TokenAmount(DAI, '101'), new TokenAmount(USDC, '100')).reserveOf(WETH[ChainId.MAINNET])
       ).toThrow('TOKEN')
     })
   })
 
   describe('#chainId', () => {
     it('returns the token0 chainId', () => {
-      expect(new Pair(new TokenAmount(USDC, '100'), new TokenAmount(DAI, '100')).chainId).toEqual(ChainId.SPARTA)
-      expect(new Pair(new TokenAmount(DAI, '100'), new TokenAmount(USDC, '100')).chainId).toEqual(ChainId.SPARTA)
+      expect(new Pair(new TokenAmount(USDC, '100'), new TokenAmount(DAI, '100')).chainId).toEqual(ChainId.MAINNET)
+      expect(new Pair(new TokenAmount(DAI, '100'), new TokenAmount(USDC, '100')).chainId).toEqual(ChainId.MAINNET)
     })
   })
   describe('#involvesToken', () => {
     expect(new Pair(new TokenAmount(USDC, '100'), new TokenAmount(DAI, '100')).involvesToken(USDC)).toEqual(true)
     expect(new Pair(new TokenAmount(USDC, '100'), new TokenAmount(DAI, '100')).involvesToken(DAI)).toEqual(true)
     expect(
-      new Pair(new TokenAmount(USDC, '100'), new TokenAmount(DAI, '100')).involvesToken(WETH[ChainId.SPARTA])
+      new Pair(new TokenAmount(USDC, '100'), new TokenAmount(DAI, '100')).involvesToken(WETH[ChainId.MAINNET])
     ).toEqual(false)
   })
 })

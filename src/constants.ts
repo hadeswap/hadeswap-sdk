@@ -25,14 +25,14 @@ export enum Rounding {
 export const INIT_CODE_HASH: string = '0xb1bd7b3014b09e6cb402b38089eb6c07219bb8621a7d4b07d2eec56bd1dda746'
 
 export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
+  [ChainId.MAINNET]: '0x4523Ad2e05c455d0043910c84c83236a6c98B40B',
   [ChainId.SPARTA]: '0x6f032f18330029345fD34C925c1154BBDce6567E',
   [ChainId.BSC]: '',
   [ChainId.MUMBAI]: ''
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '',
+  [ChainId.MAINNET]: '0x103ce09bE9eF5cc13c0904ec5D64Ff6c4cba5fb9',
   [ChainId.SPARTA]: '0x50db5A60009f655f59703d2266819491a977634d',
   [ChainId.BSC]: '',
   [ChainId.MUMBAI]: ''
