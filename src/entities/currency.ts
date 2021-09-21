@@ -21,7 +21,7 @@ export class Currency {
 
 
   public static readonly NATIVE = {
-    [ChainId.MAINNET]: Currency.ETHER,
+    [ChainId.MAINNET]: Currency.POLIS,
     [ChainId.SPARTA]: Currency.POLIS,
     [ChainId.BSC]: Currency.BNB,
     [ChainId.MUMBAI]: Currency.MATIC
