@@ -92,5 +92,8 @@ export class Currency {
 }
 
 const ETHER = Currency.ETHER
+const POLIS = Currency.POLIS
 
-export { ETHER }
+
+export { ETHER, POLIS }
+
