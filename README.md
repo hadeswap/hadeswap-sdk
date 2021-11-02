@@ -2,7 +2,7 @@
 
 In-depth documentation on this SDK is available at [uniswap.org](https://uniswap.org/docs/v2/SDK/getting-started/).
 
-This modifies uniswap-sdk's UniswapV2Factory address. The new address for hadeswap is  `0x1D073992F8BD4D3D5bF654e89F3cb412bd5f5114`.
+This modifies uniswap-sdk's UniswapV2Factory address. The new address for hadeswap is  `0x4523Ad2e05c455d0043910c84c83236a6c98B40B`.
 
 ## Running tests
 
@@ -11,7 +11,7 @@ To run the tests, follow these steps. You must have at least node v10 and [yarn]
 First clone the repository:
 
 ```sh
-git clone https://github.com/tacofinance/hadeswap-sdk.git
+git clone https://github.com/hadeswap/hadeswap-sdk
 ```
 
 Move into the hadeswap-sdk working directory

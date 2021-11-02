@@ -39,14 +39,14 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
 }
 
 export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '',
+  [ChainId.MAINNET]: '0xf1498e8103359fD96c5E08fb34b4C249B619025a',
   [ChainId.SPARTA]: '0xc9Ec2EDD1BA38918a55B5ab637dd0Ac02e6e4058',
   [ChainId.BSC]: '',
   [ChainId.MUMBAI]: ''
 }
 
 export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '',
+  [ChainId.MAINNET]: '0x342bffa41D7120C2c3ed746F80286EcD025272c5',
   [ChainId.SPARTA]: '0xb4BE34C7430FF011b653166570E211C15a03e4fA',
   [ChainId.BSC]: '',
   [ChainId.MUMBAI]: ''
@@ -75,7 +75,7 @@ export const MAKER_ADDRESS: { [chainId in ChainId]: string } = {
 }
 
 export const DAI_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '',
+  [ChainId.MAINNET]: '0x247123e806a27Ea322bFd93e0273D04602dC942D',
   [ChainId.SPARTA]: '0x388ABBB063608924d8033F1B1266B64C93F1a3a3',
   [ChainId.BSC]: '',
   [ChainId.MUMBAI]: ''

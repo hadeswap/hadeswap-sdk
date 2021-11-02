@@ -2,18 +2,18 @@
   "name": "hadeswap-beta-sdk",
   "author": "aethereum",
   "license": "MIT",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "🛠 An SDK for building applications on top of Hadeswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/taco-finance/hadeswap-sdk",
+  "repository": "https://github.com/hadeswap/hadeswap-sdk",
   "keywords": [
     "uniswap",
     "hadeswap",
-    "sparta"
+    "olympus"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
