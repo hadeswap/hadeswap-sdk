@@ -17,6 +17,8 @@ export class Currency {
   public static readonly POLIS: Currency = new Currency(18, 'POLIS', 'Polis')
   public static readonly BNB: Currency = new Currency(18, 'BNB', 'Bnb')
   public static readonly MATIC: Currency = new Currency(18, 'MATIC', 'Matic')
+  public static readonly FTM: Currency = new Currency(18, 'FTM', 'Fantom')
+
 
 
 
@@ -24,7 +26,10 @@ export class Currency {
     [ChainId.MAINNET]: Currency.POLIS,
     [ChainId.SPARTA]: Currency.POLIS,
     [ChainId.BSC]: Currency.BNB,
-    [ChainId.MUMBAI]: Currency.MATIC
+    [ChainId.MUMBAI]: Currency.MATIC,
+    [ChainId.ETHEREUM] : Currency.ETHER,
+    [ChainId.MATIC] : Currency.MATIC,
+    [ChainId.FANTOM] : Currency.FTM
   }
 
   /**

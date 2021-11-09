@@ -8,7 +8,10 @@ export enum ChainId {
   MAINNET = 333999,
   SPARTA = 333888,
   BSC = 56,
-  MUMBAI = 80001
+  MUMBAI = 80001,
+  ETHEREUM = 1,
+  FANTOM = 250,
+  MATIC = 137
 }
 
 export enum TradeType {
@@ -28,28 +31,40 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0x4523Ad2e05c455d0043910c84c83236a6c98B40B',
   [ChainId.SPARTA]: '0x6f032f18330029345fD34C925c1154BBDce6567E',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0x103ce09bE9eF5cc13c0904ec5D64Ff6c4cba5fb9',
   [ChainId.SPARTA]: '0x50db5A60009f655f59703d2266819491a977634d',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xf1498e8103359fD96c5E08fb34b4C249B619025a',
   [ChainId.SPARTA]: '0xc9Ec2EDD1BA38918a55B5ab637dd0Ac02e6e4058',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0x342bffa41D7120C2c3ed746F80286EcD025272c5',
   [ChainId.SPARTA]: '0xb4BE34C7430FF011b653166570E211C15a03e4fA',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 
@@ -57,28 +72,40 @@ export const TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.SPARTA]: '',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const BAR_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.SPARTA]: '0x6e7EA729A4716b6823E5F93f51f77A6D6Aa4969D',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const MAKER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.SPARTA]: '0xC94A2FbeAc7094790F04412873CeF3f23b024f7D',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const DAI_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0x247123e806a27Ea322bFd93e0273D04602dC942D',
   [ChainId.SPARTA]: '0x388ABBB063608924d8033F1B1266B64C93F1a3a3',
   [ChainId.BSC]: '',
-  [ChainId.MUMBAI]: ''
+  [ChainId.MUMBAI]: '',
+  [ChainId.ETHEREUM] : '',
+  [ChainId.MATIC] : '',
+  [ChainId.FANTOM] : ''
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)

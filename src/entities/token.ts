@@ -82,7 +82,28 @@ export const WETH = {
   ),
   [ChainId.MUMBAI]: new Token(
       ChainId.MUMBAI,
-      '0xC614405267eCDbF01FB5b425e3F2EC657160101A',
+      '0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa',
+      18,
+      'WETH',
+      'Wrapped ETH'
+  ),
+  [ChainId.MATIC]: new Token(
+      ChainId.MATIC,
+      '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+      18,
+      'WMATIC',
+      'Wrapped MATIC'
+  ),
+  [ChainId.FANTOM]: new Token(
+      ChainId.FANTOM,
+      '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
+      18,
+      'WFTM',
+      'Wrapped Fantom'
+  ),
+  [ChainId.ETHEREUM]: new Token(
+      ChainId.ETHEREUM,
+      '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
       18,
       'WETH',
       'Wrapped ETH'
